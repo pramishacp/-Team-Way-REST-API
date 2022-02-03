@@ -6,9 +6,25 @@ Clone this repository
 
 ### Run
 
-`npm install`
+Install dependencies: 
+```shell
+npm install
+```
 
-`node index.js`
+Start MongoDB: 
+```shell
+sudo systemctl start mongod
+```
+
+Verify that MongoDB has started successfully: 
+```shell
+sudo systemctl status mongod
+```
+
+Start our application: 
+```shell
+node index.js
+```
 
 ### Test Via Swagger
 
