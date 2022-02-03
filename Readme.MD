@@ -33,7 +33,7 @@ NODEMAILER_TRANSPORT_SERVICE_PASS = 'testpassword';
 
 `node index.js`
 
-### Test
+### Test Via Swagger
 
 Note: If you dont want authentication to be enabled set DEV_APP_REQUIRES_AUTH to true
 
