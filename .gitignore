@@ -1,5 +1,5 @@
 node_modules/
 coverage/
-.env/
-logfile.log/
-uncaughtExceptions.log/
+.env
+logfile.log
+uncaughtExceptions.log
