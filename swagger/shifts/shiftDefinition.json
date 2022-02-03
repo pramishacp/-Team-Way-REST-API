@@ -1,0 +1,25 @@
+{
+	"type": "object",
+	"properties": {
+		"worker": {
+			"type": "object",
+			"properties": {
+				"_id": {
+					"type": "string"
+				},
+				"name": {
+					"type": "string"
+				},
+				"phone": {
+					"type": "string"
+				}
+			}
+		},
+		"time": {
+			"type": "string"
+		},
+		"date": {
+			"type": "string"
+		}
+	}
+}

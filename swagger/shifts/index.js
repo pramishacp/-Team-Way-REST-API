@@ -1,0 +1,9 @@
+/* Shift */
+module.exports.addAShift = require('./addAShift.json');
+module.exports.deleteAShift = require('./deleteAShift.json');
+module.exports.getAllShifts = require('./getAllShifts.json');
+module.exports.getAShift = require('./getAShift.json');
+module.exports.updateAShift = require('./updateAShift.json');
+module.exports.shiftDefinition = require('./shiftDefinition.json');
+module.exports.addAShiftDefinition = require('./addAShiftDefinition.json');
+module.exports.updateAShiftDefinition = require('./updateAShiftDefinition.json')

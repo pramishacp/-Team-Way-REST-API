@@ -1,0 +1,28 @@
+{
+	"tags": ["Workers"],
+	"summary": "Returns all workers",
+	"description": "",
+	"operationId": "getAllWorkers",
+	"consumes": ["application/json"],
+	"produces": ["application/json"],
+	"parameters": [
+		{
+			"in": "header",
+			"name": "x-auth-token",
+			"description": "Authorization token",
+			"required": true,
+			"schema": {
+				"type": "string",
+				"format": "uuid"
+			}
+		}
+	],
+	"responses": {
+		"200": {
+			"description": "An array of worker objects",
+			"schema": {
+				"$ref": "#/definitions/Worker"
+			}
+		}
+	}
+}

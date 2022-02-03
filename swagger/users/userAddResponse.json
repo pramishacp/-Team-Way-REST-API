@@ -1,0 +1,18 @@
+{
+	"type": "object",
+	"properties": {
+		"_id": {
+			"type": "string"
+		},
+		"name": {
+			"type": "string"
+		},
+		"email": {
+			"type": "string"
+		},
+		"isAdmin": {
+			"type": "boolean"
+		}
+	},
+	"required": ["name", "email", "password"]
+}

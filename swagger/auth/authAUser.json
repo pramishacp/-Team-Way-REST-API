@@ -1,0 +1,27 @@
+{
+	"tags": ["Auth"],
+	"summary": "Auth a User",
+	"description": "",
+	"operationId": "authAUser",
+	"consumes": ["application/json"],
+	"produces": ["application/json"],
+	"parameters": [
+		{
+			"in": "body",
+			"name": "User",
+			"description": "User object that needs to be authenticated",
+			"required": true,
+			"schema": {
+				"$ref": "#/definitions/Auth"
+			}
+		}
+	],
+	"responses": {
+		"200": {
+			"description": "Successfully created",
+			"schema": {
+				"$ref": "#/definitions/Auth"
+			}
+		}
+	}
+}

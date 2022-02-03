@@ -1,0 +1,14 @@
+{
+	"type": "object",
+	"properties": {
+		"workerId": {
+			"type": "string"
+		},
+		"time": {
+			"type": "string"
+		},
+		"date": {
+			"type": "string"
+		}
+	}
+}

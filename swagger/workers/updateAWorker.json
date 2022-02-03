@@ -1,0 +1,49 @@
+{
+	"tags": ["Workers"],
+	"summary": "Updates a single worker",
+	"description": "",
+	"operationId": "updateAWorker",
+	"consumes": ["application/json"],
+	"produces": ["application/json"],
+	"parameters": [
+		{
+			"in": "path",
+			"name": "workerId",
+			"description": "Worker's id",
+			"required": true,
+			"type": "string",
+			"schema": {
+				"$ref": "#/definitions/Worker"
+			}
+		},
+		{
+			"in": "body",
+			"name": "Worker",
+			"description": "Fields for the Worker resource",
+			"required": true,
+			"type": "string",
+			"schema": {
+				"type": "array",
+				"$ref": "#/definitions/Worker"
+			}
+		},
+		{
+			"in": "header",
+			"name": "x-auth-token",
+			"description": "Authorization token",
+			"required": true,
+			"schema": {
+				"type": "string",
+				"format": "uuid"
+			}
+		}
+	],
+	"responses": {
+		"200": {
+			"description": "Successfully updated",
+			"schema": {
+				"$ref": "#/definitions/Worker"
+			}
+		}
+	}
+}

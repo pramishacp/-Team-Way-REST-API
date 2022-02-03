@@ -1,0 +1,37 @@
+{
+	"tags": ["Workers"],
+	"summary": "Creates a new worker",
+	"description": "",
+	"operationId": "addAWorker",
+	"consumes": ["application/json"],
+	"produces": ["application/json"],
+	"parameters": [
+		{
+			"in": "body",
+			"name": "Worker",
+			"description": "Worker object that needs to be added",
+			"required": true,
+			"schema": {
+				"$ref": "#/definitions/Worker"
+			}
+		},
+		{
+			"in": "header",
+			"name": "x-auth-token",
+			"description": "Authorization token",
+			"required": true,
+			"schema": {
+				"type": "string",
+				"format": "uuid"
+			}
+		}
+	],
+	"responses": {
+		"200": {
+			"description": "Successfully created",
+			"schema": {
+				"$ref": "#/definitions/Worker"
+			}
+		}
+	}
+}
