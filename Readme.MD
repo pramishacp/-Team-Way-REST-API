@@ -1,0 +1,44 @@
+## TEAM WAY REST API
+
+### Getting Started
+
+Clone this repository and create a .env file in the root of your project
+
+```javascript
+NODE_ENV = 'dev';
+
+DEV_APP_PORT = 5000;
+TEST_APP_PORT = 5000;
+PROD_APP_PORT = 3000;
+
+DEV_APP_DB = 'mongodb://localhost:27017/teamway_dev';
+TEST_APP_DB = 'mongodb://localhost:27017/teamway_test';
+PROD_APP_DB = 'mongodb://localhost:27017/teamway_prod';
+
+DEV_APP_REQUIRES_AUTH = false;
+TEST_APP_REQUIRES_AUTH = false;
+PROD_APP_REQUIRES_AUTH = false;
+
+SALT_WORK_FACTOR = 10;
+(MAX_LOGIN_ATTEMPTS = 5), (LOCK_TIME = 2 * 60 * 60 * 1000);
+JWT_SECRET = 'jwtSecretKey';
+
+NODEMAILER_TRANSPORT_SERVICE_USER = 'test@gmail.com';
+NODEMAILER_TRANSPORT_SERVICE_PASS = 'testpassword';
+```
+
+### Run
+
+`npm install`
+
+`node index.js`
+
+### Test
+
+Note: If you dont want authentication to be enabled set DEV_APP_REQUIRES_AUTH to true
+
+http://localhost:5000/api-docs
+
+### Unit/Integration Test
+
+`npm run test`
